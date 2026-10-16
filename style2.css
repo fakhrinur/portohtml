@@ -1,72 +1,101 @@
-/* Mengatur agar body menggunakan Flexbox agar form bisa pas di tengah layar */
-body {
-    background-color: #8B0000; /* Warna merah marun yang lebih elegan */
+*{
     margin: 0;
-    min-height: 100vh; /* Tinggi penuh layar */
-    display: flex;
-    flex-direction: column; /* Menyusun navbar di atas, form di tengah */
-    justify-content: center;
-    align-items: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Mempercantik Navbar */
-.navbar {
-    width: 100%;
-    position: fixed; /* Supaya navbar tetap menempel di atas */
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #111; /* Hitam pekat */
-    color: aliceblue;
-    box-sizing: border-box; /* Menerapkan border-box yang kita bahas tadi! */
+body{
+    background: linear-gradient(135deg,#0f172a,#1e3a8a);
+    min-height: 100vh;
+    padding: 40px;
 }
 
-.logo {
-    font-weight: bold;
-}
-
-/* Mempercantik Kotak Form Login (menyesuaikan class .login / .isi kamu) */
-.login, .isi {
-    background-color: #1e3a8a; /* Biru tua yang modern */
-    width: 320px;
-    padding: 30px;
-    border-radius: 12px; /* Membuat sudut kotak melengkung halus */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Memberikan efek bayangan */
+.navbar{
     text-align: center;
     color: white;
-    box-sizing: border-box; /* Supaya padding tidak merusak ukuran */
-    
+    margin-bottom: 30px;
 }
 
-/* Judul LOGIN */
-.nama {
-    margin-top: 0;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
+.logo{
+    font-size: 32px;
+    text-transform: uppercase;
 }
 
-/* Mempercantik Kotak Input */
-.isi {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    box-sizing: border-box;
+.subtitle{
+    margin-top: 8px;
     font-size: 14px;
 }
 
-/* Mempercantik Tombol (Submit & Reset) */
-.login button, .isi button {
-    width: 48%; /* Supaya tombol bisa berdampingan */
-    padding: 10px;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.2s; /* Efek transisi halus saat disentuh */
+.isi{
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
+.isi h2{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1e3a8a;
+}
+
+label{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline: none;
+    border-color: #2563eb;
+}
+
+.pilihan{
+    margin-top: 10px;
+}
+
+.pilihan input{
+    width: auto;
+    margin-right: 5px;
+}
+
+button{
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+}
+
+button[type="submit"]{
+    background: #2563eb;
+}
+
+button[type="submit"]:hover{
+    background: #1d4ed8;
+}
+
+button[type="reset"]{
+    background: #ef4444;
+    margin-left: 10px;
+}
+
+button[type="reset"]:hover{
+    background: #dc2626;
+}

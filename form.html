@@ -9,21 +9,73 @@
 <body>
     
         <nav class="navbar">
-            <h1 class="logo">universitas negeri islam</h1><hr>
-            <p style="position: absolute;top:45px;">technical and music industri</p>
-        </nav>
-    <form class="isi">
-        <ol>
-            <li>apa alasan kamu membuka</li>
-            <input type="text">
-            <li>berapa umur kamu sekarang</li>
-            <input type="number">
-            <li>apakah kamu mengerti bahasa javascript</li>
-            <input type="checkbox">mengerti
-            <input type="checkbox">tidak paham
-        </ol>
-        
+        <h1 class="logo">Universitas Negeri Islam</h1>
+        <p class="subtitle">Technical and Music Industry</p>
+    </nav>
 
+    <form class="isi">
+        <h2>Formulir Pendaftaran Mahasiswa</h2>
+
+        <label>Nama Lengkap</label>
+        <input type="text" placeholder="Masukkan nama">
+
+        <label>Email</label>
+        <input type="email" placeholder="email@gmail.com">
+
+        <label>Password</label>
+        <input type="password" placeholder="Password">
+
+        <label>Umur</label>
+        <input type="number" min="17" max="60">
+
+        <label>Tanggal Lahir</label>
+        <input type="date">
+
+        <label>Jam Belajar Favorit</label>
+        <input type="time">
+
+        <label>Nomor Telepon</label>
+        <input type="tel" placeholder="08xxxxxxxxxx">
+
+        <label>Website Pribadi</label>
+        <input type="url" placeholder="https://">
+
+        <label>Warna Favorit</label>
+        <input type="color">
+
+        <label>Upload Foto</label>
+        <input type="file">
+
+        <label>Tingkat Ketertarikan pada Programming</label>
+        <input type="range" min="0" max="100">
+
+        <label>Jenis Kelamin</label>
+        <div class="pilihan">
+            <input type="radio" name="gender"> Laki-laki
+            <input type="radio" name="gender"> Perempuan
+        </div>
+
+        <label>Bahasa yang Dikuasai</label>
+        <div class="pilihan">
+            <input type="checkbox"> HTML
+            <input type="checkbox"> CSS
+            <input type="checkbox"> JavaScript
+            <input type="checkbox"> Python
+        </div>
+
+        <label>Jurusan</label>
+        <select>
+            <option>Teknik Informatika</option>
+            <option>Sistem Informasi</option>
+            <option>Desain Grafis</option>
+            <option>Musik Digital</option>
+        </select>
+
+        <label>Alasan Masuk Universitas Ini</label>
+        <textarea rows="5"></textarea>
+        <button type="submit" class="submite2"onclick="berhasilSimpan()">Kirim</button>
+        <button type="reset">Reset</button>
     </form>
+<script src="main2.js"></script>
 </body>
 </html>
