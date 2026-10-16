@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login {
+    width: 320px;
+    padding: 30px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    box-shadow:
+        0 0 20px rgba(0, 0, 136, 0.3),
+        0 0 40px rgba(0, 0, 255, 0.15);
+
+    color: white;
+    text-align: center;
+
+    transition: 0.3s ease;
+}
+
+.nama {
+    width: 100px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.username{
+margin-top:15px;
+margin-bottom:5px;
+padding: 10px;
+}
+.password{
+    margin:5px;
+    padding: 10px;
+}
+.submit {
+    background-color: #10b981; /* Hijau modern */
+    color: white;
+    margin: 30px auto auto auto;
+}
+
+.submit:hover {
+    background-color: #059669;
+}
+
+.reset {
+    background-color: #ef4444; /* Merah terang */
+    color: white;
+}
+
+.reset:hover {
+    background-color: #dc2626;
+}
